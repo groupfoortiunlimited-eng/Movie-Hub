@@ -1,0 +1,22 @@
+{
+  "name": "Movie Hub - Stream Free",
+  "short_name": "Movie Hub",
+  "description": "Watch the latest trending movies, TV shows, and anime in HD.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f0f",
+  "theme_color": "#E50914",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
