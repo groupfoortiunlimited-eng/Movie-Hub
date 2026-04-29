@@ -26,8 +26,10 @@
     <meta property="twitter:title" content="Movie Hub - Watch HD Movies & TV Shows Free">
     <meta property="twitter:description" content="Discover and watch the latest trending movies, TV shows, and anime in HD.">
     <meta property="twitter:image" content="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80">
-    <link rel="manifest" href="manifest.json">
+    
+    <link rel="manifest" href="manifest.json?v=2">
     <link rel="icon" type="image/jpeg" href="logo.jpg">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWQE6CLEYK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -611,7 +613,8 @@
         window.addEventListener('offline', () => { document.getElementById('offline-banner').style.display = 'block'; });
         window.addEventListener('online', () => { document.getElementById('offline-banner').style.display = 'none'; triggerHaptic([10, 30, 10]); showToast("Back Online! 🟢"); });
 
-        if ('serviceWorker' in navigator) { window.addEventListener('load', function() { navigator.serviceWorker.register('sw.js').catch(function(err) {}); }); }
+        // Cache Buster যুক্ত করা হয়েছে
+        if ('serviceWorker' in navigator) { window.addEventListener('load', function() { navigator.serviceWorker.register('sw.js?v=2').catch(function(err) {}); }); }
 
         const API_KEY = 'eb9ca62f86d6bd3082cb871951fd64f5'; 
         const BASE_URL = 'https://api.themoviedb.org/3';
