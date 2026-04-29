@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://movie-hub.groupfoortiunlimited.workers.dev/sitemap.xml
